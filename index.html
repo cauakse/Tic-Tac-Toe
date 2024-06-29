@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <script src="./index.js" defer></script>
+</head>
+
+<body data-theme="dark">
+    <header>
+        <h1 id="winnerName">Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <section class="mainSection">
+            <label for="playerOne">
+                <p>Player 1</p>
+                <input type="text" name="" id="playerOne" placeholder="      Digite o Nome do Player 1">
+            </label>
+
+            <label for="playerTwo">
+                <p>Player 2</p>
+                <input type="text" name="" id="playerTwo" placeholder="      Digite o Nome do Player 2">
+            </label>
+            <span class="playSpan">
+                <button id="play">Jogar</button>
+            </span>
+            <span class="switchThemeSpan"> <button id="themeSwitcher">Switch Theme</button></span>
+        </section>
+
+        <section>
+            <div class="tabuleiro" id="tabuleiro">
+                <table id="game" class="gameTable">
+                    <tr class="firstRow">
+                        <td>
+                            <button value='{"c":0,"l":0}' id='c0l0' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":1,"l":0}' id='c1l0' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":2,"l":0}' id='c2l0' class="gameBtn"></button>
+                        </td>
+                    </tr>
+                    <tr class="secondRow">
+                        <td>
+                            <button value='{"c":0,"l":1}' id='c0l1' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":1,"l":1}' id='c1l1' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":2,"l":1}' id='c2l1' class="gameBtn"></button>
+                        </td>
+                    </tr>
+                    <tr class="tirthRow">
+                        <td>
+                            <button value='{"c":0,"l":2}' id='c0l2' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":1,"l":2}' id='c1l2' class="gameBtn"></button>
+                        </td>
+                        <td>
+                            <button value='{"c":2,"l":2}' id='c2l2' class="gameBtn"></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

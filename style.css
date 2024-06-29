@@ -1,0 +1,154 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: #212529;
+    --border-color: #9B89B3;
+    --font-color: #f1f5f9;
+    --primary-color: #4dff91;
+    --error-color: #ff0043;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+header{
+    display: flex;
+}
+
+h1{
+    padding: 3rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mainSection{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+input{
+    display: block;
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    color: var(--font-color);
+}
+
+.mainSection>section{
+    display: inline;
+}
+.mainSection>label>p{
+    text-align: center;
+}
+.mainSection>label:nth-child(2){
+    margin-left: 13rem;
+}
+.first{
+    display: inline;
+}
+.second{
+    display: block;
+}
+.tabuleiro{
+    display: none;
+    align-items: center;
+    width: 100%;
+}
+.gameTable{
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.gameBtn{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    cursor: pointer;
+    border: var(--border-color) 0.2rem solid;
+}
+.gameBtnClicked{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    cursor: not-allowed;
+    color: black;
+    border: var(--border-color) 0.2rem solid;
+}
+.gameBtn:hover{
+    filter: brightness(0.8);
+}
+.secondRow>:nth-child(1)>button{
+    border-left: none;
+}
+.secondRow>:nth-child(3)>button{
+    border-right: none;
+}
+
+.firstRow>td>button{
+    border-top: none;
+}
+.firstRow>:nth-child(1)>button{
+    border-left: none;
+}
+.firstRow>:nth-child(3)>button{
+    border-right: none;
+}
+.tirthRow>td>button{
+    border-bottom: none;
+}
+.tirthRow>:nth-child(1)>button{
+    border-left: none;
+}
+.tirthRow>:nth-child(3)>button{
+    border-right: none;
+}
+#play,#replay{
+    background-color: transparent;
+    border: solid var(--border-color);
+    border-width: 2px;
+    border-radius: .5rem;
+    color: var(--font-color);
+    cursor: pointer;
+    display: block;
+    height: 2rem;
+    width: 6rem;
+  }
+
+  .switchThemeSpan{
+   position: absolute;
+   align-self: end;
+   margin-left: 75rem;
+  }
+  .switchThemeSpan>button{
+    border-radius: 0.8rem;
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 0.3rem;
+    filter: brightness(0.8);
+  }
+
+  .playSpan{
+    position: absolute;
+    margin-top: 5rem;
+    cursor: pointer;
+  }
+
+  .playSpan>button:hover{
+    filter: brightness(0.8);
+  }
